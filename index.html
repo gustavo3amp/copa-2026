@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Copa do Mundo 2026</title>
+    <meta name="description" content="Site sobre a Copa do Mundo FIFA 2026. Projeto da Trilha 5 da Alura por Gustavo.">
+    <meta name="author" content="Gustavo">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5 bg-success text-white">
+        <nav class="container d-flex justify-content-between align-items-center" role="navigation">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/2026_FIFA_World_Cup_bid_logo.svg/800px-2026_FIFA_World_Cup_bid_logo.svg.png"
+                alt="Logo da Copa 2026" class="nav-img" width="80" height="80">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#galeria">Estádios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+            </ul>
+
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-light fw-bold" aria-haspopup="true" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-light fw-bold">A +</button>
+                    <button id="diminuir-fonte" class="btn btn-light fw-bold">A -</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Seção Início -->
+        <section id="inicio" class="my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 text-success fw-bold">Bem-vindo à Copa do Mundo FIFA 2026!</h1>
+                    <p class="lead">A maior competição de futebol do planeta será sediada por EUA, Canadá e México. Prepare-se para um torneio inesquecível!</p>
+                    <a href="#sobre" class="btn btn-success btn-lg mt-3">Saiba mais</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2018_FIFA_World_Cup_Russia_final_ceremony_16.jpg/800px-2018_FIFA_World_Cup_Russia_final_ceremony_16.jpg"
+                        class="img-fluid rounded" alt="Torcida comemorando em uma cerimônia da Copa do Mundo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/2026_FIFA_World_Cup_hosts_map.svg/800px-2026_FIFA_World_Cup_hosts_map.svg.png"
+                        class="img-fluid rounded" alt="Mapa com as cidades-sede da Copa de 2026">
+                </div>
+                <div class="col-md-6">
+                    <h2>Sobre a Copa 2026</h2>
+                    <p>A Copa do Mundo FIFA 2026 será a primeira com <strong>48 seleções</strong> e acontecerá em <strong>três países</strong>: Estados Unidos, Canadá e México. Serão 16 cidades-sede, com jogos em estádios modernos e públicos recordes.</p>
+                    <ul>
+                        <li>Mais de 100 partidas ao longo do torneio</li>
+                        <li>Participação ampliada com novas seleções</li>
+                        <li>Eventos culturais e celebrações em todo o continente</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Galeria -->
+        <section id="galeria" class="my-5">
+            <h2 class="text-center mb-4">Estádios Sede</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/SoFi_Stadium_2021.jpg/800px-SoFi_Stadium_2021.jpg"
+                        class="img-fluid rounded-4" alt="Interior do SoFi Stadium com o telão Oculus">
+                    <p class="mt-2">SoFi Stadium – Los Angeles, EUA</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Estadio_Azteca_07.jpg/800px-Estadio_Azteca_07.jpg"
+                        class="img-fluid rounded-4" alt="Vista aérea do Estádio Azteca">
+                    <p class="mt-2">Estádio Azteca – Cidade do México, México</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/BMO_Field_2010.jpg/800px-BMO_Field_2010.jpg"
+                        class="img-fluid rounded-4" alt="BMO Field em Toronto, Canadá">
+                    <p class="mt-2">BMO Field – Toronto, Canadá</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="my-5">
+            <div class="container p-4 rounded-4 bg-light">
+                <h2 class="mb-4 text-center">Fale com a organização</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome completo</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: Gustavo Silva">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-center p-4 bg-dark text-light">
+        <p>Projeto fictício desenvolvido por Gustavo – Trilha 5 da Alura</p>
+        <p>Siga nas redes:
+            <i class="bi bi-instagram mx-2"></i>
+            <i class="bi bi-twitter-x mx-2"></i>
+            <i class="bi bi-tiktok mx-2"></i>
+        </p>
+    </footer>
+
+    <script>
+        // Acessibilidade
+        const aumentarFonte = document.getElementById("aumentar-fonte");
+        const diminuirFonte = document.getElementById("diminuir-fonte");
+        let fontSize = 100;
+
+        aumentarFonte.addEventListener("click", () => {
+            if (fontSize < 150) {
+                fontSize += 10;
+                document.body.style.fontSize = fontSize + "%";
+            }
+        });
+
+        diminuirFonte.addEventListener("click", () => {
+            if (fontSize > 80) {
+                fontSize -= 10;
+                document.body.style.fontSize = fontSize + "%";
+            }
+        });
+    </script>
+</body>
+
+</html>

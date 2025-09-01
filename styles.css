@@ -1,0 +1,21 @@
+/* Acessibilidade */
+.menu-acessibilidade {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.opcoes-acessibilidade {
+    display: none;
+}
+
+.apresenta-lista {
+    display: flex;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.rotacao-botao {
+    transform: rotate(20deg);
+    transition: transform 0.3s;
+}
